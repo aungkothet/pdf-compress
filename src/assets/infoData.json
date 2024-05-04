@@ -1,0 +1,32 @@
+[
+    {
+        "title": "How to compress PDF files",
+        "icon": "Compress_Tool.png",
+        "body": "Select your PDF files which you would like to compress or drop them into the file box and start the compression. A few seconds later you can download your compressed PDF files."
+    },
+    {
+        "title": "Adjustable quality",
+        "icon": "Adjust.png",
+        "body": "You can adjust the compression quality so that you can tune the compression algorithm in order to get a perfect result. PDF files with images can be compressed better than PDF files with text only."
+    },
+    {
+        "title": "Easy to use",
+        "icon": "Star.png",
+        "body": "PDF24 makes it as easy and fast as possible for you to compress your files. You don't need to install any software, you only have to select your files and start the compression."
+    },
+    {
+        "title": "Runs on your system",
+        "icon": "Computer.png",
+        "body": "The compression tool does not need any special system in order to compress your PDF files. The app is browser based and works under all operating systems."
+    },
+    {
+        "title": "No installation required",
+        "icon": "Cloud.png",
+        "body": "You do not need to download and install any software. PDF files are compressed in the cloud on our servers. The app does not consume your system resources."
+    },
+    {
+        "title": "Secure online compression",
+        "icon": "Lock.png",
+        "body": "The compression tool does not keep your files longer than necessary on our server. Your files and results will be deleted from our server after a short period of time."
+    }
+]
