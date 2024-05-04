@@ -30,7 +30,7 @@ export default function LevelOfCompressionComponent({
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.jobId)
+        console.log(data)
         handleCompressComplete(data.jobId)
       })
       .catch((error) => console.error(error))
@@ -38,26 +38,26 @@ export default function LevelOfCompressionComponent({
 
   return (
     <>
-      <div className="rounded-b outline-dashed  outline-primary-400 outline-1 flex flex-col items-center pt-2">
+      <div className="rounded-b outline-dashed  outline-primary-400 dark:outline-primary-200 outline-1 flex flex-col items-center pt-2">
         <h1 className="h6 font-bold ps-60 w-full">Level of compression</h1>
 
-        <div className="flex justify-center w-3/5 space-x-1 bg-white relative top-4 p-3">
+        <div className="flex justify-center w-3/5 space-x-1 bg-white dark:bg-neutral-800 relative top-4 p-3">
           <p className="text-sm max-w-24">Small Size Low Quality</p>
 
           <ol className="flex items-center w-full">
             {[...Array(8)].map((x, i) => (
               <li
                 className={`${
-                  step >= i + 1 ? `text-primary-400` : `text-primary-200`
+                  step >= i + 1 ? `text-primary-400 dark:text-neutral-700` : `text-primary-200 dark:text-neutral-600`
                 } flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-4 after:inline-block `}
                 key={i}
               >
                 {step == i && (
-                  <span className="flex items-center bg-primary-400 justify-center w-4 h-4 rounded-full shrink-0"></span>
+                  <span className="flex items-center bg-primary-400 dark:bg-neutral-700 justify-center w-4 h-4 rounded-full shrink-0"></span>
                 )}
                 {step != i && (
                   <span
-                    className="flex items-center bg-primary-400 justify-center w-1 h-1 rounded-full shrink-0 cursor-pointer"
+                    className="flex items-center bg-primary-400 dark:bg-neutral-700 justify-center w-1 h-1 rounded-full shrink-0 cursor-pointer"
                     onClick={() => {
                       setStep(i)
                     }}
@@ -68,7 +68,7 @@ export default function LevelOfCompressionComponent({
             <span
               className={`${
                 step == 9 ? ` w-4 h-4` : ` w-1 h-1`
-              } flex items-center bg-primary-400 justify-center rounded-full shrink-0 cursor-pointer`}
+              } flex items-center bg-primary-400 dark:bg-neutral-700 justify-center rounded-full shrink-0 cursor-pointer`}
               onClick={() => {
                 setStep(9)
               }}
@@ -77,8 +77,8 @@ export default function LevelOfCompressionComponent({
           <p className="text-sm max-w-24 px-1">Big Size High Quality</p>
         </div>
       </div>
-      <div className="mt-8 ps-60 w-9/12">
-        <div className="bg-primary-200 border border-primary-400 rounded ps-3 pt-2">
+      <div className="mt-8 ps-60 w-10/12">
+        <div className="bg-primary-200 dark:bg-neutral-600 border border-primary-400 dark:border-neutral-700 rounded ps-3 pt-2">
           <label className="caption text-sm font-light px-2">
             Compression Settings
           </label>
@@ -132,7 +132,7 @@ export default function LevelOfCompressionComponent({
       </div>
       <div className="text-center pt-6">
         <button
-          className="bg-secondary-500 rounded text-sm font-light px-7 py-1 hover:bg-secondary-600"
+          className="bg-secondary-500 dark:bg-secondary-600 rounded text-sm font-light px-7 py-1 hover:bg-secondary-600 dark:hover:bg-secondary-500"
           onClick={makeCompress}
         >
           Compress

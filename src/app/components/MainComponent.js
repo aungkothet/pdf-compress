@@ -35,7 +35,7 @@ export default function MainComponent() {
           jobId={jobId} setStep={setStep}></Step3Component>
         )}
       </div>
-      {step == 3 && <hr className="h-px bg-primary-500 border-0"></hr>}
+      {step == 3 && <hr className="h-px bg-primary-500 dark:bg-primary-200 border-0"></hr>}
     </>
   )
 }

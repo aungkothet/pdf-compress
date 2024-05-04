@@ -27,8 +27,6 @@ export default function Step2Component({
           }
         })
         .then((data) => {
-          console.log('response data ')
-          console.log(data)
           if (data.status == 'done') {
             clearInterval(intervalId)
             parseJobId(jobId)
@@ -43,12 +41,12 @@ export default function Step2Component({
   }
   return (
     <>
-      <div className="px-3 py-5 rounded-t text-primary-400 bg-primary-200 relative z-10">
+      <div className="px-3 py-5 rounded-t text-primary-400 bg-primary-200 dark:bg-neutral-600 dark:text-white relative z-10">
         <StepsBarComponent step={2}></StepsBarComponent>
         <div className="flex items-center justify-center w-full space-x-2">
           {fileData.map((fileInfo, key) => (
             <div
-              className="justify-center max-w-36 my-4 outline rounded outline-1 p-1 outline-neutral-600"
+              className="justify-center max-w-36 my-4 outline rounded outline-1 p-1 outline-neutral-600 dark:outline-primary-200"
               key={key}
             >
               <div className="flex justify-between">

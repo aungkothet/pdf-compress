@@ -1,7 +1,7 @@
 export default function DevicesComponent() {
   return (
     <div className="max-w-xl">
-      <div className="bg-white rounded-44 py-2 px-5">
+      <div className="bg-white dark:bg-neutral-900 rounded-44 py-2 px-5">
         <div className="grid grid-cols-5 gap-4 space-x-0.5">
           <div className="inline-flex items-center">
             <svg

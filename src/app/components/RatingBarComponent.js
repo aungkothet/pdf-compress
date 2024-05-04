@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function RatingBarComponent() {
   return (
-    <div className="bg-primary-600 h-14">
+    <div className="bg-primary-600 dark:bg-neutral-700 h-14">
       <div className="py-4 px-36 flex justify-between">
         <div className="inline-flex items-center">
           <Image

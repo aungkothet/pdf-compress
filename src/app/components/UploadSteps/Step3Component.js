@@ -16,7 +16,7 @@ export default function Step3Component({ setStep, fileData, jobId }) {
   }
   return (
     <>
-      <div className="px-3 py-5 rounded-t  bg-primary-200 ">
+      <div className="px-3 py-5 rounded-t  bg-primary-200 dark:bg-neutral-600 dark:text-white">
         <StepsBarComponent step={3}></StepsBarComponent>
 
         <div className="flex flex-col items-center justify-center w-full pt-3">
@@ -40,20 +40,20 @@ export default function Step3Component({ setStep, fileData, jobId }) {
           ))}
           <div className="grid grid-cols-3 gap-4 mt-3">
             <button
-              className="bg-secondary-500 hover:bg-secondary-600 rounded px-4 py-1 font-light text-sm max-w-32"
+              className="bg-secondary-500 hover:bg-secondary-600 dark:bg-secondary-600 dark:hover:bg-secondary-500 rounded px-4 py-1 font-light text-sm max-w-32"
               onClick={handleDownload}
             >
               Download
             </button>
-            <button className="outline outline-secondary-500 hover:outline-secondary-600 rounded px-4 py-1 font-light text-sm max-w-32">
+            <button className="outline outline-secondary-500 dark:outline-secondary-600 dark:hover:outline-secondary-500 hover:outline-secondary-600 rounded px-4 py-1 font-light text-sm max-w-32">
               Preview
             </button>
-            <button className="bg-secondary-500 hover:bg-secondary-600 rounded py-1 font-light text-sm max-w-32">
+            <button className="bg-secondary-500 hover:bg-secondary-600 dark:bg-secondary-600 dark:hover:bg-secondary-500 rounded py-1 font-light text-sm max-w-32">
               Continue in another tools
             </button>
           </div>
           <div className="w-1/5  mt-4">
-            <hr className="h-px bg-neutral-600 border-0"></hr>
+            <hr className="h-px bg-neutral-600 dark:bg-primary-200 border-0"></hr>
           </div>
         </div>
         <div className="flex items-center justify-center space-x-4">
@@ -72,7 +72,7 @@ export default function Step3Component({ setStep, fileData, jobId }) {
             </svg>
             <span className="text-red">Delete</span>
           </div>
-          <div className="flex space-x-1 text-error-600 items-center" onClick={restart}>
+          <div className="flex space-x-1 items-center" onClick={restart}>
             <svg
               width="16"
               height="16"
@@ -95,11 +95,11 @@ export default function Step3Component({ setStep, fileData, jobId }) {
                 strokeLinejoin="round"
               />
             </svg>
-            <span className="text-neutral-800">Restart</span>
+            <span className="text-neutral-800 dark:text-white">Restart</span>
           </div>
         </div>
       </div>
-      <div className="px-3 py-4 rounded-t-lg mt-5 bg-primary-500  ">
+      <div className="px-3 py-4 rounded-t-lg mt-5 bg-primary-500 dark:bg-neutral-700 ">
         <div className="grid grid-cols-5 grid-rows-1 gap-3">
           {toolsData.slice(0, 5).map((tools, key) => (
             <div className="rounded border border-primary-200 p-2" key={key}>

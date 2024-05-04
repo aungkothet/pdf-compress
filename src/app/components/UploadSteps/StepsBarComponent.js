@@ -1,7 +1,7 @@
 export default function StepsBarComponent({ step = 1 }) {
   return (
     <div className="flex justify-between pe-6">
-      <button className="outline rounded-full outline-primary-400 text-primary-400 text-sm px-3 py-1 outline-1 inline-flex items-center">
+      <button className="outline rounded-full outline-primary-400 dark:outline-neutral-700 text-primary-400 dark:text-neutral-700 text-sm px-3 py-1 outline-1 inline-flex items-center">
         {step >= 2 && (
           <svg
             width="17"
@@ -29,8 +29,8 @@ export default function StepsBarComponent({ step = 1 }) {
       <button
         className={`outline rounded-full text-sm px-3 py-1 outline-1 inline-flex items-center${
           step >= 2
-            ? `outline-primary-400 text-primary-400`
-            : `outline-neutral-600 text-neutral-600`
+            ? `outline-primary-400 text-primary-400 dark:text-neutral-700 dark:outline-neutral-700`
+            : `outline-neutral-600 text-neutral-600 dark:text-primary-200 dark:outline-primary-200`
         }`}
       >
         {step >= 3 && (
@@ -60,8 +60,8 @@ export default function StepsBarComponent({ step = 1 }) {
       <button
         className={`outline rounded-full text-sm px-3 py-1 outline-1 ${
           step >= 3
-            ? `outline-primary-400 text-primary-400`
-            : `outline-neutral-600 text-neutral-600`
+            ? `outline-primary-400 text-primary-400 dark:text-neutral-700 dark:outline-neutral-700`
+            : `outline-neutral-600 text-neutral-600 dark:text-primary-200 dark:outline-primary-200`
         }`}
       >
         3. Done

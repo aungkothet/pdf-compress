@@ -21,7 +21,7 @@ export default function Step1Component({ handleNextStep, setFileData }) {
 
   return (
     <>
-      <div className="outline-dashed px-3 py-5 rounded text-primary-400 bg-primary-200">
+      <div className="outline-dashed px-3 py-5 rounded text-primary-400 bg-primary-200 dark:bg-neutral-600 dark:text-white">
         <StepsBarComponent step={1}></StepsBarComponent>
 
         <div className="flex items-center justify-center w-full">
@@ -43,7 +43,7 @@ export default function Step1Component({ handleNextStep, setFileData }) {
                 />
               </svg>
 
-              <div className="flex items-center space-x-2 text-center bg-secondary-500 rounded text-black py-2 px-3 my-2">
+              <div className="flex items-center space-x-2 text-center bg-secondary-500 dark:bg-secondary-600 rounded text-black  py-2 px-3 my-2">
                 <span>Select Files</span>
                 <svg
                   width="1"
@@ -65,11 +65,11 @@ export default function Step1Component({ handleNextStep, setFileData }) {
                   <path d="M0 0 L5 4 L10 0" stroke="#000" />
                 </svg>
               </div>
-              <p className="mb-2 text-sm text-neutral-600">
+              <p className="mb-2 text-sm text-neutral-600 dark:text-primary-200">
                 or drag and drop file into this area
               </p>
               <div className="flex space-x-3 text-black text-sm ">
-                <div className="flex items-end text-sm space-x-2">
+                <div className="flex items-end text-sm space-x-2 dark:text-primary-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 48 48"
@@ -87,7 +87,7 @@ export default function Step1Component({ handleNextStep, setFileData }) {
                   </svg>
                   Dropbox
                 </div>
-                <div className="flex items-end text-sm space-x-2">
+                <div className="flex items-end text-sm space-x-2 dark:text-primary-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 48 48"

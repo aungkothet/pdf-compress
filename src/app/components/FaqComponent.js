@@ -14,10 +14,10 @@ export default function FAQComponent() {
       >
         <button
           type="button"
-          className="flex items-center text-3xl justify-between w-full pe-5 font-medium text-primary-600 border border-primary-500  focus:ring-2 hover:bg-primary-200 gap-3"
+          className="flex items-center text-3xl justify-between w-full pe-5 font-medium text-primary-600 border border-primary-500 hover:bg-primary-200 gap-3 dark:border-neutral-600 dark:text-white dark:hover:bg-black"
         >
           <div className="flex space-x-4">
-            <div className="bg-primary-600 w-4 ">&nbsp;</div>
+            <div className="bg-primary-600 w-4 dark:bg-primary-700">&nbsp;</div>
             <span>FAQ</span>
           </div>
           <svg
@@ -42,9 +42,9 @@ export default function FAQComponent() {
       <div
         className={`${
           expand ? `show` : 'hidden'
-        } w-full p-5 border rounded-b-md border-primary-500`}
+        } w-full p-5 border rounded-b-md border-primary-500 dark:border-primary-200`}
       >
-        <p className="mb-2 text-neutral-700 font-light">
+        <p className="mb-2 text-neutral-700 dark:text-white font-light">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and

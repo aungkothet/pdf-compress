@@ -5,7 +5,7 @@ export default function FooterComponent() {
   return (
     <>
       <div className="mx-28">
-        <hr className="h-px my-4 bg-primary-500 border-0"></hr>
+        <hr className="h-px my-4 bg-primary-500 dark:bg-neutral-600 border-0"></hr>
         <h1 className="h1">All tools</h1>
         <div className="grid grid-flow-col-dense grid-cols-6 grid-rows-7">
           {toolsData.map((tools, key) => (

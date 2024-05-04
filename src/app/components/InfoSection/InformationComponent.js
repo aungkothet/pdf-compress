@@ -7,7 +7,7 @@ export default function InfoSectionComponent() {
   return (
     <>
       <AdsSectionComponent />
-      <div className="bg-primary-200">
+      <div className="bg-primary-200 dark:bg-neutral-600">
         <h1 className="h1 text-center mt-5">Information</h1>
         <div className="flex justify-center mt-3">
           <DevicesComponent />
